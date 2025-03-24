@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    min-height: 100vh;
+}
+
+h2{
+    position: relative;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    cursor: default;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h2 span{
+    color: #555;
+    transition: 0.25s;
+}
+
+h2:hover span{
+    color: #00ff2a;
+    text-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0;
+    /* text-shadow: horizontal-offset vertical-offset blur-radius color; *//*The first shadow is sharp, while the second and third expand the glow, creating a neon effect.*/
+
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 6vw;
+    }
+}
+
+/* For very small devices (below 480px) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 7vw;
+    }
+}
